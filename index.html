@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>live kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="wrapper">
+      <i class="fa-solid fa-arrow-left button" id="prev"></i>
+      <div class="image-container">
+        <div class="carousel">
+          <img src="alyson-mcphee-yWG-ndhxvqY-unsplash.jpg" alt="" />
+          <img src="conscious-design-3D43SBDDkAc-unsplash.jpg" alt="" />
+          <img src="maarten-van-den-heuvel-EzH46XCDQRY-unsplash.jpg" alt="" />
+          <img src="conscious-design-IMMHJRp4dcM-unsplash.jpg" alt="" />
+          <img src="alyson-mcphee-yWG-ndhxvqY-unsplash.jpg" alt="" />
+          <img src="iE.gif" alt="" />
+        </div>
+        <i class="fa-solid fa-arrow-right button" id="next"></i>
+      </div>
+    </section>
+    <div class="hero">
+        <div style="background-color: transparent;" class="form">
+            <div style="background-color: #292827;" class="apnaa">
+            <h3 style="color: rgb(216, 202, 202); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: 100; letter-spacing: 5px; margin: 0px auto;">Take A</h3>
+            <h3 style="color: rgba(229, 153, 153, 0.959); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: 100; letter-spacing: 5px; margin: 0px auto;"> Reservation</h3>
+                <input type="name" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Number">
+                <input type="password" placeholder="Password">
+                <input type="text" placeholder="Title">
+                <input style="height: 15%;" type="text" placeholder="Message">
+                <button type="submit"> Submit</button>
+                </div>
+        </div>
+        <div class="textformhero">
+            <div>
+            <h1>Mark Jahid </h1>
+            <h5> Head chef</h5>
+            </div>
+            <div>
+            <p>Behance is the world's largest discovering creative work.</p>
+            <p>some amazing dishes to serve your guests but if you are ... </p>
+            <p>ehance is the world's largest discovering creative </p>
+            <p>want to create a stunning video in no time</p>
+            <p>ehance is the world's largest discovering creative </p>
+            <p>want to create a stunning video in no time</p>
+            </div>
+            <img src="data:image/png;base64,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">
+            <button type="submit"> Start </button>
+        </div>
+        <div class="cookpic"></div>
+    </div>
+    <div class="special">
+        <div class="df">
+            <div class="dfchild">
+                <p style="color: black; font-size: 16px;">For the menu</p>
+                <h2 style="color: black;">Special Dishes</h2>
+                <h2 style="color: black;">Today</h2>
+            </div>
+            <div class="dfchild2">
+                <div class="ty">
+                    <div class="tyin"> <img src="hamburger-1238246_1280.jpg"> </div>
+                    <div class="tyinn">
+                        <h3 style="color: black;">GRILLED OCTOPUS SALAD</h3>
+                        <p style="color: black; white-space: pre; font-size: 11px;">Lorem ipsum dolor sit, amet consectetur 
+Sed, sunt totam quasi temporibus  commod</p>
+                    </div>
+                </div>
+
+                <div class="ty">
+                    <div class="tyin"> <img src="download35423.jfif"> </div>
+                    <div class="tyinn">
+                        <h3 style="color: black;">GRILLED OCTOPUS SALAD</h3>
+                        <p style="white-space: pre; color: black; font-size: 11px;">Lorem ipsum dolor sit, amet consectetur 
+Sed, sunt totam quasi temporibus  commod</p>
+                    </div>
+                </div>
+
+                <div class="ty">
+                    <div class="tyin"> <img src="download645.jfif"> </div>
+                    <div class="tyinn">
+                        <h3 style="color: black;">GRILLED OCTOPUS SALAD</h3>
+                        <p style="white-space: pre; color: black; font-size: 11px;">Lorem ipsum dolor sit, amet consectetur 
+Sed, sunt totam quasi temporibus  commod</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="df1">
+            <div class="lof">
+                <h2 id="idd">We Love</h2>
+                <h2 id="idd1">To make</h2>
+                <h2 id="idd2">Food</h2>
+            </div>
+            <div class="lof1">
+                <div class="con1">
+                    <img src="iCnew.jpg" alt="">
+                    <img src="iEnew.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="special1"></div> -->
+
+    <div class="special3">
+        <div class="qw">
+            <div class="ad1">
+                <p style="color:rgb(71, 143, 71)">Our</p>
+                <p style="color:rgb(71, 143, 71)">Specialy</p>
+                <p style="color: red">Cuisine</p>
+            </div>
+            <div class="ad2">
+                <h3>Best of Our</h3>
+                <h3>Event Portfoli Photo</h3>
+                <h3>video</h3>
+            </div>
+            <div class="ad3">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nemo alias, quibusdam cupiditate ducimus non dolorem consectetur commodi delectus iusto accusamus ab! Quam, quod quasi odio maxime omnis deserunt dolor!
+                </p>
+            </div>
+            <div class="ad4">
+                <button type="submit">GET GALLERY</button>
+            </div>
+        </div>
+        <div class="qw1">
+            <div class="p1">
+                <img class="k" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Zm9vZCUyMGJ1cmdnZXJ8ZW58MHx8MHx8fDA%3D" alt="">
+                <img style="margin-top: 1vw;" height="55%" src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvb2QlMjBidXJnZ2VyfGVufDB8fDB8fHww" alt="">
+            </div>
+            <div class="p2">
+                <img  src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2QlMjBidXJnZ2VyfGVufDB8fDB8fHww" alt="">
+                <img  src="https://plus.unsplash.com/premium_photo-1679434184867-a294eb85400c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZCUyMGJ1cmdnZXJ8ZW58MHx8MHx8fDA%3D" alt="">
+                <img  src="https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMGJ1cmdnZXJ8ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="special4">
+        <div class="cookphoto">
+            <img src="cookpic.avif">
+        </div>
+        <div class="cooktext">
+            <h2> IN THE KITCHEN</h2>
+            <h1 class="h1"> I Love <span></span></h1>
+            <div> 
+                <p>To</p>
+                <p>And</p>
+            </div>
+            <h3> Made pazza</h3>
+        </div>
+    </div>
+
+    <div class="elem">
+        <div class="elem1">
+            <div class="div1"></div>
+            <div class="div2">
+                <h3 class="ab"> BreakFast</h3>
+                <p class="cd"> 8am to 10am</p>
+            </div>
+        </div>
+        <div class="elem2">
+            <div class="div1"></div>
+            <div class="div2">
+                <h3 class="ab"> lunch</h3>
+                <p class="cd"> 10am to 1pm</p>
+            </div>
+        </div>
+        <div class="elem3">
+            <div class="div1"></div>
+            <div class="div2">
+                <h3 class="ab"> Barger / pizza</h3>
+                <p class="cd"> anytime </p>
+            </div>
+        </div>
+        <div class="elem4">
+            <div class="div1"></div>
+            <div class="div2">
+                <h3 class="ab"> Coffe / Drinks</h3>
+                <p class="cd"> anytime </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="special5">
+        <div class="sp1">
+            <h2>Blog</h2>
+            <p>Meet out of our testy food</p>
+        </div>
+        <div class="sp2">
+            <div class="hj1">
+                <img src="download1212.jfif">
+                <div class="imp">
+                    <p> lorem lorem lipsum sil buy prod slidce </p>
+                   <p> Anthony Bourdain </p>
+                </div> 
+                <div class="loo">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <i class="fa-solid fa-comment"></i>
+                </div>
+            </div>
+            <div class="hj2">
+                <img src="download2323.jfif">
+                <div class="imp">
+                    <p> lorem lorem lipsum sil buy prod slidce </p>
+                   <p> Anthony Bourdain </p>
+                </div> 
+                <div class="loo">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <i class="fa-solid fa-comment"></i>
+                </div>
+            </div>
+            <div class="hj3">
+                <img src="download3498.jfif">
+                <div class="imp">
+                <p> lorem lorem lipsum sil buy prod slidce </p>
+               <p> Anthony Bourdain </p>
+            </div> 
+                <div class="loo">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <i class="fa-solid fa-comment"></i>
+                </div>
+            </div>
+            <div class="hj4">
+                <div class="hjin">
+                    <h4>Our</h4>
+                    <h4>Article</h4>
+                </div>
+                <div class="hjinn">
+                    <p>Upgrade our</p>
+                    <p>Restaurent and services</p>
+                    <p>latest News</p>
+                </div>
+                <button>Make Order</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="special6">
+        <div class="footer1">
+            <div class="firstdiv">
+                <div class="id"> <div class="ku"> NewsLater</div> </div>
+                <div class="form2"> 
+                <h4> Register your <br>complaint here </h4>
+                    <form>
+                        <input type="text" placeholder="  Type...">
+                        <button type="submit"> submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="seconddiv">
+                <div class="m1">
+                    <h4> LifeStyle</h4>
+                </div>
+                <div class="m2">
+                    <P>
+                    It is a long established fact that a 
+                    be distracted by the readable content 
+                    looking at its layout. The point of 
+                    is that it has a more-or-less normal
+                    as opposed to using 'Content here, 
+                    look like readable English. Many desktop  
+                    and web page editors
+                    </P>
+                </div>
+                <div class="m3">
+                    <button class="btn" type="submit"> contact</button>
+                </div>
+            </div>
+
+
+            <div class="thirddiv">
+                <div class="v1">
+                    <h4> 
+                        Dancing time
+                    </h4>
+                </div>
+                <div class="v2">
+                    <ul>
+                        <li> Sliced Apples      </li>
+                        <li> Quinoa Breakfast   </li>
+                        <li> Kefir Smoothie    </li>
+                        <li> Avocado Toast     </li>
+                        <li> Tofu Scramble     </li>
+                        <li> Baked Sweet      </li>
+                        <li> Overnight Oats      </li>
+                        <li> Chia Seeds          </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="a1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpMTilLSHuCX1yMGq-Pbl5lQhaOY_n8EXJkw&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNiK8mcpkPL7jNcQyfj2TPC2Xlcd4LbYatqg&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7VQ-GXGGhO0PxlVuNtrGl2eX3MP3ISL2NA&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSX2qzoy3rgKdnXaCWhZIbj5dIzHKTPZ0-g&usqp=CAU" alt="">
+            </div>
+            <div class="a2">
+                <p>Copyright © 2009 - 2023 Livekitchen®. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <i id="kl" class="fa-solid fa-bars"></i>
+        <img height="35px" src="logojjj.jfif">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    
+
+</body>
+<script src="script.js"></script>
+</html>
