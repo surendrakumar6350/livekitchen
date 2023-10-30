@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -83,10 +86,7 @@ body, html {
     gap: 30px;
   }
   .textformhero button {
-    background-color: rgba(170, 123, 36, 0.856);
     color: white;
-    font-size: 20px;
-    font-weight: 700;
     border-radius: 15px;
     width: 40%;
     height: 6%;
@@ -128,6 +128,9 @@ color: black;
 .special .df1 {
     height: 100%;
     width: 50%;
+}
+.nav {
+    z-index: 11;
 }
 .dfchild {
 width: 98%;
@@ -268,9 +271,8 @@ flex-direction: column;
 .ad4 button {
     height: 40%;
     width: 130px;
-    background-color: rgba(151, 101, 8, 0.692);
     border-radius: 11px;
-    font-weight: 800;
+   font-size: 11px;
 }
 .special3 .qw1 {
     height: 100%;
@@ -505,9 +507,7 @@ color: #0e2f61;
     width: 70%;
     height: 35px;
     border-radius: 10px;
-    background-color: rgb(116, 87, 33);
     color: white;
-    font-weight: 800;
 }
 .loo i {
     color: black
@@ -564,29 +564,27 @@ border-bottom: 1px solid;
 .form .apnaa {
     width: 95%;
     height: 90%;
-    background-color: #e62222;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 5px;
+    padding: 10px;
+    border-radius: 8px;
 }
 .apnaa input {
     display: block;
     width: 100%;
     height: 7%;
     margin-bottom: 4px;
-    background-color: #49495569;
+    background-color:rgb(226, 210, 249);
     color: white;
     font-weight: 800;
+    padding: 10px;
+    border-radius: 10px;
 }
 .apnaa button {
-    width: 100%;
     color: white;
-    background-color: rgba(187, 132, 30, 0.829);
-    height: 7%;
-    font-size: 20px;
-    font-weight: 800;
 }
 .apnaa h3 {
     color: black;
@@ -633,9 +631,6 @@ border-bottom: 1px solid;
     height: 30px;
     width: 100px;
     margin-top: 2vw;
-    color:rgb(255, 249, 242);
-    font-weight: bolder;
-    border-radius: 7px;
 }
 .footer1 .thirddiv {
     width: 100%;
@@ -1050,6 +1045,11 @@ width: 100%;
         cursor: pointer;
     }
   }
+  .btn12 {
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 12px;
+  }
 
   .form2 {
     display: flex;
@@ -1074,10 +1074,55 @@ width: 100%;
     width: 100%;
   }
   .form2 button {
-    background-color: rgba(187, 142, 59, 0.74);
     width: 60%;
     height: 25px;
     border-radius: 7px;
     margin-top: 10px;
     cursor: pointer;
+    font-size: 10px;
   }
+
+
+
+  button {
+    margin: 1em;
+    font-family: "Sigmar One", cursive;
+    letter-spacing: 1px;
+    height: 3em;
+    width: 11em;
+    background: rgb(0, 89, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1.05em;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    font-weight: 100;
+}
+
+.btn-3 {
+    position: relative;
+    background: rgb(0, 89, 255);
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+.btn-3:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.btn-3::after {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #fffb0e;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
